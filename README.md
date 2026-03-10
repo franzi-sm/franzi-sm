@@ -1,16 +1,23 @@
-## Hi there 👋
+# Data Analytics Portfolio
 
-<!--
-**franzi-sm/franzi-sm** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Hi there! I'm a Business Analytics graduate student with experience in data analytics and business intelligence.
 
-Here are some ideas to get you started:
+This repository contains projects applying data analysis, data modeling, forecasting, and data visualization techniques.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+In my educational & professional work, I have contributed to different data analytics projects involving i.e.Power BI dashboards, SQL-based data models, and business performance analysis. Due to data privacy and company confidentiality, these projects cannot be shared publicly.
+
+This portfolio allows me to demonstrate the methods and tools I use by applying them to publicly available datasets.
+
+The portfolio is continuously expanding as I add new projects.
+
+## Tools & Technologies
+Python  
+SQL  
+Power BI  
+R  
+
+## Current Projects
+- **Airbnb Availability in Paris**  
+   Visualizing Airbnb listing availability
+
+More projects will be added over time.
