@@ -18,6 +18,6 @@ R
 
 ## Current Projects
 - **Airbnb Availability in Paris**  
-   Visualizing Airbnb listing availability
+   Visualizing Airbnb listings availability
 
 More projects will be added over time.
