@@ -1,34 +1,48 @@
 # Data Analytics Portfolio
 
-Hi there! I'm a Business Analytics graduate student with experience in data analytics and business intelligence.
+Hi, I'm Franziska, a Business Analytics graduate student with a background in marketing & e-retail (LVMH, L'Oréal) and hands-on experience in BI and data analytics (Eurowings - Lufthansa Group).
 
-This repository contains projects applying data analysis, data modeling, forecasting, and data visualization techniques.
+This portfolio demonstrates the methods and tools I use by applying them to publicly 
+available datasets. Projects from my professional work (Power BI dashboards, SQL data 
+models, business performance analysis) cannot be shared publicly due to confidentiality.
 
-In my educational & professional work, I have contributed to different data analytics projects involving i.e.Power BI dashboards, SQL-based data models, and business performance analysis. Due to data privacy and company confidentiality, these projects cannot be shared publicly.
-
-This portfolio allows me to demonstrate the methods and tools I use by applying them to publicly available datasets.
-
-The portfolio is continuously expanding as I add new projects.
-
-## Tools & Technologies
-
-**Analytics & BI:** Power BI · Power Query · Looker Studio · Azure Analysis Services  
-**Programming:** Python (pandas, numpy, scipy, matplotlib, seaborn, scikit-learn) · R  
-**Data & Databases:** SQL · SQLite  
-**Other:** Microsoft Excel · Git
+The portfolio is continuously expanding.
 
 ---
 
-## Current Projects
+## Tools & Technologies
 
-- **A/B Test Analysis: Email Campaign Subject Lines** *(in progress)*  
-  Statistical analysis of a simulated e-retail email campaign — comparing open rates and conversion rates between a generic and a personalised subject line. Covers data simulation, Chi-Squared testing, power analysis, and confidence intervals.  
-  `Python` · `scipy` · `pandas` · `matplotlib`  
-  → [ab-test-email-campaign](https://github.com/franzi-sm/ab-test-email-campaign)
+| Area | Tools |
+|------|-------|
+| Analytics & BI | Power BI · Power Query · Looker Studio · Azure Analysis Services |
+| Programming | Python (pandas, numpy, scipy, matplotlib, seaborn, scikit-learn) · R |
+| Data & Databases | SQL · SQLite |
+| Other | Excel · Git |
 
-- **Airbnb Paris - Market Analysis & BI Dashboard**  
-  End-to-end BI project analysing 70,000+ Airbnb listings in Paris: Python data pipeline, host clustering, geospatial enrichment, and an interactive multi-page Power BI dashboard.  
-  `Python` · `Power BI` · `Power Query` · `scikit-learn`  
-  → [Airbnb-Group-Project-Paris](https://github.com/franzi-sm/Airbnb-Group-Project-Paris)
+---
+
+## Projects
+
+### A/B Test Analysis: Email Campaign Subject Lines
+Statistical analysis of a simulated e-retail email campaign — testing whether 
+personalised subject lines outperform generic ones on open rate and conversion rate.
+
+Covers: data simulation · Chi-Squared testing · power analysis · confidence intervals · business recommendation
+
+`Python` · `scipy` · `pandas` · `matplotlib`  
+→ [ab-test-email-campaign](https://github.com/franzi-sm/ab-test-email-campaign)
+
+---
+
+### Airbnb Paris — Market Analysis & BI Dashboard
+End-to-end BI project analysing 70,000+ Airbnb listings in Paris: Python data pipeline, 
+host clustering, geospatial enrichment, and an interactive multi-page Power BI dashboard.
+
+Covers: ETL pipeline · star-schema data model · host segmentation · pricing & review analysis
+
+`Python` · `Power BI` · `Power Query` · `scikit-learn`  
+→ [Airbnb-Group-Project-Paris](https://github.com/franzi-sm/Airbnb-Group-Project-Paris)
+
+---
 
 *More projects coming soon.*
