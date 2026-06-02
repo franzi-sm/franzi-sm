@@ -24,7 +24,7 @@ The portfolio is continuously expanding.
 ## Projects
 
 ### A/B Test Analysis: Email Campaign Subject Lines
-Statistical analysis of a simulated e-retail email campaign — testing whether 
+Statistical analysis of a simulated e-retail email campaign testing whether
 personalised subject lines outperform generic ones on open rate and conversion rate.
 
 Covers: data simulation · Chi-Squared testing · power analysis · confidence intervals · business recommendation
@@ -35,7 +35,7 @@ Covers: data simulation · Chi-Squared testing · power analysis · confidence i
 ---
 
 ### Airbnb Paris - Market Analysis & BI Dashboard
-End-to-end BI project analysing 70,000+ Airbnb listings in Paris: Python data pipeline, 
+End-to-end BI project analysing 70,000+ Airbnb listings in Paris: Python data pipeline,
 host clustering, geospatial enrichment, and an interactive multi-page Power BI dashboard.
 
 Covers: ETL pipeline · star-schema data model · host segmentation · pricing & review analysis
@@ -48,7 +48,10 @@ Covers: ETL pipeline · star-schema data model · host segmentation · pricing &
 ### CAPM & Rolling Window Regression - Mercedes-Benz AG
 Empirical estimation of market risk using CAPM and rolling window regression in R.
 Dynamic Beta analysis across multiple window sizes with interactive Plotly charts.
-**Stack:** R · tidyquant · ggplot2 · plotly · Shiny
-[CAPM-Rolling-Window-Regression-MBG](https://github.com/franzi-sm/CAPM-Rolling-Window-Regression-MBG)
+
+Covers: CAPM · rolling Beta · significance analysis · sensitivity analysis · risk benchmarking
+
+`R` · `tidyquant` · `ggplot2` · `plotly` · `Shiny`  
+→ [CAPM-Rolling-Window-Regression-MBG](https://github.com/franzi-sm/CAPM-Rolling-Window-Regression-MBG)
 
 *More projects coming soon.*
