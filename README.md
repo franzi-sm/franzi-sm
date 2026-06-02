@@ -34,7 +34,7 @@ Covers: data simulation · Chi-Squared testing · power analysis · confidence i
 
 ---
 
-### Airbnb Paris — Market Analysis & BI Dashboard
+### Airbnb Paris - Market Analysis & BI Dashboard
 End-to-end BI project analysing 70,000+ Airbnb listings in Paris: Python data pipeline, 
 host clustering, geospatial enrichment, and an interactive multi-page Power BI dashboard.
 
