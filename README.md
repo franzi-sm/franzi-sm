@@ -11,13 +11,24 @@ This portfolio allows me to demonstrate the methods and tools I use by applying 
 The portfolio is continuously expanding as I add new projects.
 
 ## Tools & Technologies
-Python  
-SQL  
-Power BI  
-R  
+
+**Analytics & BI:** Power BI · Power Query · Looker Studio · Azure Analysis Services  
+**Programming:** Python (pandas, numpy, scipy, matplotlib, seaborn, scikit-learn) · R  
+**Data & Databases:** SQL · SQLite  
+**Other:** Microsoft Excel · Git
+
+---
 
 ## Current Projects
-- **Airbnb Availability in Paris**  
-   Visualizing Airbnb listings availability
 
-More projects will be added over time.
+- **A/B Test Analysis: Email Campaign Subject Lines** *(in progress)*  
+  Statistical analysis of a simulated e-retail email campaign — comparing open rates and conversion rates between a generic and a personalised subject line. Covers data simulation, Chi-Squared testing, power analysis, and confidence intervals.  
+  `Python` · `scipy` · `pandas` · `matplotlib`  
+  → [Repository link once uploaded]
+
+- **Airbnb Paris — Market Analysis & BI Dashboard**  
+  End-to-end BI project analysing 70,000+ Airbnb listings in Paris: Python data pipeline, host clustering, geospatial enrichment, and an interactive multi-page Power BI dashboard.  
+  `Python` · `Power BI` · `Power Query` · `scikit-learn`  
+  → [Airbnb-Group-Project-Paris](https://github.com/franzi-sm/Airbnb-Group-Project-Paris)
+
+*More projects coming soon.*
