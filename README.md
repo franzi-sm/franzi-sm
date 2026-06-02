@@ -45,4 +45,10 @@ Covers: ETL pipeline · star-schema data model · host segmentation · pricing &
 
 ---
 
+### CAPM & Rolling Window Regression - Mercedes-Benz AG
+Empirical estimation of market risk using CAPM and rolling window regression in R.
+Dynamic Beta analysis across multiple window sizes with interactive Plotly charts.
+**Stack:** R · tidyquant · ggplot2 · plotly · Shiny
+[CAPM-Rolling-Window-Regression-MBG](https://github.com/franzi-sm/CAPM-Rolling-Window-Regression-MBG)
+
 *More projects coming soon.*
