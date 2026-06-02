@@ -24,7 +24,7 @@ The portfolio is continuously expanding as I add new projects.
 - **A/B Test Analysis: Email Campaign Subject Lines** *(in progress)*  
   Statistical analysis of a simulated e-retail email campaign — comparing open rates and conversion rates between a generic and a personalised subject line. Covers data simulation, Chi-Squared testing, power analysis, and confidence intervals.  
   `Python` · `scipy` · `pandas` · `matplotlib`  
-  → [Repository link once uploaded]
+  → [Repository link once uploaded]](https://github.com/franzi-sm/ab-test-email-campaign)
 
 - **Airbnb Paris — Market Analysis & BI Dashboard**  
   End-to-end BI project analysing 70,000+ Airbnb listings in Paris: Python data pipeline, host clustering, geospatial enrichment, and an interactive multi-page Power BI dashboard.  
