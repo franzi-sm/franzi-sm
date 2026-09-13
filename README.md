@@ -4,34 +4,38 @@ Hi, I'm Franziska, a Business Analytics graduate student, currently working as a
 
 Background in marketing and e retail (LVMH, L'Oréal), with hands on BI experience at Eurowings (Lufthansa Group).
 
-This portfolio applies the same methods and tools I use professionally — Power BI dashboards, data modeling, reporting automation — to public datasets, since client and employer work can't be shared publicly.
+This portfolio applies the same methods and tools I use professionally, including Power BI dashboards, data modeling, and reporting automation, to public datasets, since client and employer work can't be shared publicly.
 
 Continuously expanding.
 
 ## Tools
 
-Power BI · Power Query · DAX · Python · pandas · scikit learn · R · SQL · Excel · Git
+Power BI, Power Query, DAX, Python, pandas, scikit learn, R, SQL, Excel, Git
 
 ## Projects
 
-**Power BI Management Reporting: KMU Demo**
-Excel to star schema data model to DAX driven management report for SME reporting automation
-Power BI · Power Query · DAX
-[View repository](https://github.com/franzi-sm/powerbi-kmu-management-reporting)
+### Power BI Management Reporting: KMU Demo
+Excel to star schema data model to DAX driven management report for SME reporting automation.
 
-**Airbnb Paris: Market Analysis & BI Dashboard**
-70k+ listings: ETL pipeline, host clustering, geospatial enrichment, interactive dashboard
-Python · Power BI · scikit learn
-[View repository](https://github.com/franzi-sm/Airbnb-Group-Project-Paris)
+Tools: Power BI, Power Query, DAX
+Repository: https://github.com/franzi-sm/powerbi-kmu-management-reporting
 
-**CAPM & Rolling Window Regression: Mercedes Benz**
-Market risk (Beta) estimation via CAPM and rolling regression, with significance testing across window sizes
-R · tidyquant · plotly
-[View repository](https://github.com/franzi-sm/CAPM-Rolling-Window-Regression-MBG)
+### Airbnb Paris: Market Analysis & BI Dashboard
+Analysis of 70,000+ listings covering an ETL pipeline, host clustering, geospatial enrichment, and an interactive dashboard.
 
-**A/B Test: Email Campaign Subject Lines**
-Chi squared test and power analysis comparing personalized vs. generic subject lines
-Python · scipy
-[View repository](https://github.com/franzi-sm/ab-test-email-campaign)
+Tools: Python, Power BI, scikit learn
+Repository: https://github.com/franzi-sm/Airbnb-Group-Project-Paris
+
+### CAPM & Rolling Window Regression: Mercedes Benz
+Market risk (Beta) estimation via CAPM and rolling regression, with significance testing across window sizes.
+
+Tools: R, tidyquant, plotly
+Repository: https://github.com/franzi-sm/CAPM-Rolling-Window-Regression-MBG
+
+### A/B Test: Email Campaign Subject Lines
+Chi squared test and power analysis comparing personalized subject lines against generic ones.
+
+Tools: Python, scipy
+Repository: https://github.com/franzi-sm/ab-test-email-campaign
 
 More projects coming soon.
