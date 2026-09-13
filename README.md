@@ -73,11 +73,12 @@ mirror a typical KMU ERP/Excel export
 ---
 
 ## Repository Structure
-powerbi-kmu-management-reporting/  
-├── pbix/  
-│   └── Management-Report-Demo.pbix   # Power BI demo file  
-├── LICENSE  
-└── README.md  
+
+```
+powerbi-kmu-management-reporting/
+├── Management-Report-Demo.pbix   # Power BI demo file
+└── README.md
+```
 
 ---
 
