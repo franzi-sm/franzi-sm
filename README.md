@@ -1,57 +1,88 @@
-# Data Analytics Portfolio
+# Power BI Management Reporting — KMU Demo
 
-Hi, I'm Franziska, a Business Analytics graduate student with a background in marketing & e-retail (LVMH, L'Oréal) and hands-on experience in BI and data analytics (Eurowings - Lufthansa Group).
-
-This portfolio demonstrates the methods and tools I use by applying them to publicly 
-available datasets. Projects from my professional work (Power BI dashboards, SQL data 
-models, business performance analysis) cannot be shared publicly due to confidentiality.
-
-The portfolio is continuously expanding.
+> End-to-end business intelligence project for owner-led SMEs (KMU/Mittelstand): 
+> from raw monthly Excel exports to a governed Power BI data model and an 
+> interactive management reporting dashboard with plan/actual, EBIT, and 
+> regional KPI insights.
 
 ---
 
-## Tools & Technologies
+## Project Overview
 
-| Area | Tools |
-|------|-------|
-| Analytics & BI | Power BI · Power Query · Looker Studio · Azure Analysis Services |
-| Programming | Python (pandas, numpy, scipy, matplotlib, seaborn, scikit-learn) · R |
-| Data & Databases | SQL · SQLite |
-| Other | Excel · Git |
+This project covers the full analytics pipeline for SME management reporting — 
+data ingestion from Excel, dynamic transformation logic, dimensional data 
+modelling in Power BI, and a multi-page interactive report built for 
+board-level review.
 
----
-
-## Projects
-
-### A/B Test Analysis: Email Campaign Subject Lines
-Statistical analysis of a simulated e-retail email campaign testing whether
-personalised subject lines outperform generic ones on open rate and conversion rate.
-
-Covers: data simulation · Chi-Squared testing · power analysis · confidence intervals · business recommendation
-
-`Python` · `scipy` · `pandas` · `matplotlib`  
-→ [ab-test-email-campaign](https://github.com/franzi-sm/ab-test-email-campaign)
+**Data period:** synthetic monthly data, DACH region  
+**Data source:** synthetic dataset (4 business segments × 5 regions), built to 
+mirror a typical KMU ERP/Excel export
 
 ---
 
-### Airbnb Paris - Market Analysis & BI Dashboard
-End-to-end BI project analysing 70,000+ Airbnb listings in Paris: Python data pipeline,
-host clustering, geospatial enrichment, and an interactive multi-page Power BI dashboard.
+## Tech Stack
 
-Covers: ETL pipeline · star-schema data model · host segmentation · pricing & review analysis
-
-`Python` · `Power BI` · `Power Query` · `scikit-learn`  
-→ [Airbnb-Group-Project-Paris](https://github.com/franzi-sm/Airbnb-Group-Project-Paris)
+`Power BI` · `Power Query (M)` · `DAX` · `Star Schema Modelling`
 
 ---
 
-### CAPM & Rolling Window Regression - Mercedes-Benz AG
-Empirical estimation of market risk using CAPM and rolling window regression in R.
-Dynamic Beta analysis across multiple window sizes with interactive Plotly charts.
+## Pipeline
 
-Covers: CAPM · rolling Beta · significance analysis · sensitivity analysis · risk benchmarking
+### 1. Extract
+- Monthly Excel workbook (one sheet per period) hosted on SharePoint/OneDrive
+- A single centralized connection query (`fx_Workbook`) so every downstream 
+  query reads from one point of truth
 
-`R` · `tidyquant` · `ggplot2` · `plotly` · `Shiny`  
-→ [CAPM-Rolling-Window-Regression-MBG](https://github.com/franzi-sm/CAPM-Rolling-Window-Regression-MBG)
+### 2. Transform (Power Query / M)
+- Pattern-based sheet detection (`fnIstMonatsblatt`) — identifies valid 
+  monthly-data sheets by name pattern instead of a hardcoded year, so new 
+  months/years are picked up automatically on refresh
+- Per-sheet reshaping (`fnTransformBlatt`) — derives the reporting date from 
+  the sheet name and reshapes each sheet into the standard fact-row layout
+- Fact table kept clean: keys and KPI values only, no descriptive text columns
 
-*More projects coming soon.*
+### 3. Load & Model (Power BI)
+- Star-schema dimensional data model
+- Fact table: `Fakt_Umsatz` (revenue, plan, EBIT, order intake, headcount costs)
+- Dimension tables: `Dim_Datum` (daily grain, for correct `DATEADD` time 
+  intelligence), `Dim_Regionen` (with lat/long for map visuals)
+
+---
+
+## Dashboard Pages
+
+| Page | Key Metrics |
+|------|-------------|
+| Management Report | Umsatz vs. Plan/LM · EBIT & EBIT-Marge · regional map · order intake trend · headcount cost comparison |
+| Quartalsreport | Condensed quarterly KPI view for board-level review |
+
+---
+
+## Key Findings & Technical Highlights
+
+- A daily-grain date dimension is required for `DATEADD`-based time 
+  intelligence to return correct, non-blank results — monthly grain breaks it
+- An earlier concatenated text key (`MonatJahrKey`) caused duplicate-key 
+  relationship errors once multiple rows per month existed; fixed by joining 
+  on a proper `date` column instead
+- Dynamic display measures auto-switch between K€ and Mio.€ formatting based 
+  on magnitude, so KPI cards stay legible across scales
+- Conditional arrow/colour indicators (`SWITCH(TRUE(), ...)` + `UNICHAR`) 
+  flag over-/under-plan performance at a glance without manual formatting
+
+---
+
+## Repository Structure
+powerbi-kmu-management-reporting/  
+├── pbix/  
+│   └── Management-Report-Demo.pbix   # Power BI demo file  
+├── LICENSE  
+└── README.md  
+
+---
+
+## Data Disclaimer
+
+All data used in this project is synthetic and was generated for 
+demonstration purposes only. It does not represent any real company, client, 
+or business figures.
