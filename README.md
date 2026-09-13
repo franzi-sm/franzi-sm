@@ -1,89 +1,30 @@
-# Power BI Management Reporting — KMU Demo
+# Data Analytics Portfolio
 
-> End-to-end business intelligence project for owner-led SMEs (KMU/Mittelstand): 
-> from raw monthly Excel exports to a governed Power BI data model and an 
-> interactive management reporting dashboard with plan/actual, EBIT, and 
-> regional KPI insights.
+Hi, I'm Franziska — Business Analytics graduate student, currently working as a 
+Data & Operations Support Specialist at LifeworQ, and freelance Power BI 
+developer ([Franziska Meyndt – Business & Data Analytics](#)). Background in 
+marketing & e-retail (LVMH, L'Oréal), with hands-on BI experience at Eurowings 
+(Lufthansa Group).
 
----
-
-## Project Overview
-
-This project covers the full analytics pipeline for SME management reporting — 
-data ingestion from Excel, dynamic transformation logic, dimensional data 
-modelling in Power BI, and a multi-page interactive report built for 
-board-level review.
-
-**Data period:** synthetic monthly data, DACH region  
-**Data source:** synthetic dataset (4 business segments × 5 regions), built to 
-mirror a typical KMU ERP/Excel export
+This portfolio applies the same methods and tools I use professionally, such as Power BI 
+dashboards, data modeling, reporting automation to public datasets, since 
+client and employer work can't be shared. Continuously expanding.
 
 ---
 
-## Tech Stack
+## Tools
 
-`Power BI` · `Power Query (M)` · `DAX` · `Star Schema Modelling`
-
----
-
-## Pipeline
-
-### 1. Extract
-- Monthly Excel workbook (one sheet per period) hosted on SharePoint/OneDrive
-- A single centralized connection query (`fx_Workbook`) so every downstream 
-  query reads from one point of truth
-
-### 2. Transform (Power Query / M)
-- Pattern-based sheet detection (`fnIstMonatsblatt`) — identifies valid 
-  monthly-data sheets by name pattern instead of a hardcoded year, so new 
-  months/years are picked up automatically on refresh
-- Per-sheet reshaping (`fnTransformBlatt`) — derives the reporting date from 
-  the sheet name and reshapes each sheet into the standard fact-row layout
-- Fact table kept clean: keys and KPI values only, no descriptive text columns
-
-### 3. Load & Model (Power BI)
-- Star-schema dimensional data model
-- Fact table: `Fakt_Umsatz` (revenue, plan, EBIT, order intake, headcount costs)
-- Dimension tables: `Dim_Datum` (daily grain, for correct `DATEADD` time 
-  intelligence), `Dim_Regionen` (with lat/long for map visuals)
+`Power BI` · `Power Query` · `DAX` · `Python` (pandas, scipy, scikit-learn) · `R` · `SQL` · `Excel` · `Git`
 
 ---
 
-## Dashboard Pages
+## Projects
 
-| Page | Key Metrics |
-|------|-------------|
-| Management Report | Umsatz vs. Plan/LM · EBIT & EBIT-Marge · regional map · order intake trend · headcount cost comparison |
-| Quartalsreport | Condensed quarterly KPI view for board-level review |
+| Project | What it shows | Stack |
+|---|---|---|
+| **[Power BI Management Reporting — KMU Demo](https://github.com/franzi-sm/powerbi-kmu-management-reporting)** | Excel → star-schema data model → DAX-driven management report for SME reporting automation | Power BI · Power Query · DAX |
+| **[Airbnb Paris — Market Analysis & BI Dashboard](https://github.com/franzi-sm/Airbnb-Group-Project-Paris)** | 70k+ listings: ETL, host clustering, geospatial enrichment, interactive dashboard | Python · Power BI · scikit-learn |
+| **[CAPM & Rolling Window Regression — Mercedes-Benz](https://github.com/franzi-sm/CAPM-Rolling-Window-Regression-MBG)** | Market risk (Beta) estimation via CAPM and rolling regression | R · tidyquant · plotly |
+| **[A/B Test: Email Campaign Subject Lines](https://github.com/franzi-sm/ab-test-email-campaign)** | Chi-squared test + power analysis on personalization vs. generic messaging | Python · scipy |
 
----
-
-## Key Findings & Technical Highlights
-
-- A daily-grain date dimension is required for `DATEADD`-based time 
-  intelligence to return correct, non-blank results — monthly grain breaks it
-- An earlier concatenated text key (`MonatJahrKey`) caused duplicate-key 
-  relationship errors once multiple rows per month existed; fixed by joining 
-  on a proper `date` column instead
-- Dynamic display measures auto-switch between K€ and Mio.€ formatting based 
-  on magnitude, so KPI cards stay legible across scales
-- Conditional arrow/colour indicators (`SWITCH(TRUE(), ...)` + `UNICHAR`) 
-  flag over-/under-plan performance at a glance without manual formatting
-
----
-
-## Repository Structure
-
-```
-powerbi-kmu-management-reporting/
-├── Management-Report-Demo.pbix   # Power BI demo file
-└── README.md
-```
-
----
-
-## Data Disclaimer
-
-All data used in this project is synthetic and was generated for 
-demonstration purposes only. It does not represent any real company, client, 
-or business figures.
+*More projects coming soon.*
