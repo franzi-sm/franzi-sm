@@ -13,7 +13,7 @@ Continuously expanding.
 
 | Project | Description | Tools | Repository |
 |---|---|---|---|
-| Power BI Management Reporting Demo | End to end analytics solution for SME management reporting, from raw Excel data to a star schema model and DAX driven dashboard| `Power BI` `Power Query` `DAX` | [Link](https://github.com/franzi-sm/powerbi-management-reporting-demo) |
+| Power BI Management Reporting Demo | End to end analytics solution for SME management reporting, from raw Excel data to a star schema model and DAX driven dashboard| `Power BI` `Power Query` `DAX` | [Link](https://github.com/franzi-sm/powerbi-kmu-management-reporting) |
 | Airbnb Paris: Market Analysis & BI Dashboard | 70,000+ listings covering an ETL pipeline, host clustering, geospatial enrichment, and an interactive dashboard | `Python` `Power BI` `scikit learn` | [Link](https://github.com/franzi-sm/Airbnb-Group-Project-Paris) |
 | CAPM & Rolling Window Regression: Mercedes Benz | Market risk (Beta) estimation via CAPM and rolling regression, with significance testing across window sizes | `R` `tidyquant` `plotly` | [Link](https://github.com/franzi-sm/CAPM-Rolling-Window-Regression-MBG) |
 | A/B Test: Email Campaign Subject Lines | Chi squared test and power analysis comparing personalized subject lines against generic ones | `Python` `scipy` | [Link](https://github.com/franzi-sm/ab-test-email-campaign) |
